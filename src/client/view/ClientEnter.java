@@ -40,14 +40,13 @@ public class ClientEnter {
         
         
         enter_button = new JButton();
-//        Border roundedBorder = BorderFactory.createRoundRectBorder(10, 10);
-//        enter_button.setBorder(roundedBorder);
         enter_button.setFocusPainted(false);
         enter_button.setBorderPainted(false);
         enter_button.setText("Click here to start your journey at Cheriton School !    (  •  ω  •  ) ⁄ ♡");
         enter_button.addActionListener(e->{
         	try {
         		new ClientLogin();
+        		frame.dispose();
         	}catch(Exception ex) {
         		ex.printStackTrace();
         	}
